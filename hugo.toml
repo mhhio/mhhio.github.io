@@ -1,0 +1,126 @@
+baseURL = 'https://mhhio.github.io/'
+title = "MHHIO"
+paginate = 5
+theme = "PaperMod"
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+pygmentsUseClasses = true
+defaultContentLanguage = 'fa'
+[minify]
+disableXML = true
+
+[languages.fa]
+languagedirection = "rtl"
+weight = 1
+title = "mhhio's Blog"
+
+
+[[languages.fa.menu.main]]
+name = "آرشیو"
+url = "archives"
+weight = 5
+
+[[languages.fa.menu.main]]
+name = "جست و جو"
+url = "search/"
+weight = 10
+
+[[languages.fa.menu.main]]
+name = "تگ ها"
+url = "tags/"
+weight = 10
+
+[[languages.fa.menu.main]]
+name = "درباره‌ی من"
+url = "about"
+weight = 10
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[params]
+env = "production"
+description = "mhhio https://mhhio.github.io"
+author = "mhhio"
+defaultTheme = "auto"
+ShowShareButtons = true
+ShowReadingTime = true
+displayFullLangName = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = true
+ShowToc = true
+images = [ "papermod-cover.png" ]
+
+[params.profileMode]
+enabled = true
+title = "محمدحسین حاجی‌وندی"
+imageUrl = "avatar.png"
+imageTitle = "my image"
+
+[[params.profileMode.buttons]]
+name = "آرشیو"
+url = "archives"
+
+[[params.profileMode.buttons]]
+name = "درباره‌ی من"
+url = "about"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/mhhio"
+
+[[params.socialIcons]]
+name = "telegram"
+url = "https://t.me/mhhio"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "www.linkedin.com/in/mhhio"
+
+
+[[params.socialIcons]]
+name = "email"
+url = "mhhajivandy@gmail.com"
+
+
+[[params.socialIcons]]
+name = "Rss"
+url = "index.xml"
+
+[params.assets]
+disableHLJS = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+noClasses = false
+
+[privacy.vimeo]
+disabled = false
+simple = true
+
+[privacy.twitter]
+disabled = false
+enableDNT = true
+simple = true
+
+[privacy.instagram]
+disabled = false
+simple = true
+
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
+
+[services.instagram]
+disableInlineCSS = true
+
+[services.twitter]
+disableInlineCSS = true
