@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://mhhio.github.io/sitemap.xml
