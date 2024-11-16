@@ -1,0 +1,53 @@
+<!-- layouts/partials/extend_head.html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --main-font: 'Vazirmatn', sans-serif;
+    }
+
+    body {
+        font-family: var(--main-font) !important;
+    }
+
+    .post-title {
+        font-family: var(--main-font) !important;
+    }
+
+    .post-content {
+        font-family: var(--main-font) !important;
+    }
+
+    .post-meta {
+        font-family: var(--main-font) !important;
+    }
+
+    .entry-header {
+        font-family: var(--main-font) !important;
+    }
+
+    .entry-content {
+        font-family: var(--main-font) !important;
+    }
+
+    /* For RTL support if needed */
+    [dir="rtl"] body {
+        font-family: var(--main-font) !important;
+    }
+
+    /* Center figure captions */
+    .post-content figure figcaption {
+        text-align: center !important;
+        /* Optional: add some spacing and styling */
+        margin-top: 10px;
+        font-style: italic;
+    }
+
+    /* Center the figure itself if needed */
+    .post-content figure {
+        text-align: center;
+        margin: 1.5em auto;
+    }
+</style>
