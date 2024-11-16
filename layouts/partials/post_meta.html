@@ -1,0 +1,14 @@
+{{- /* layouts/partials/post_meta.html */ -}}
+{{- $scratch := newScratch }}
+
+{{- if not .Date.IsZero -}}
+<span class="meta-item">
+    {{- $dateFormat := site.Params.dateFormat | default "2006-01-02" -}}
+    {{ $formattedDate := .Date.Format $dateFormat | replaceRE "January|February|March|April|May|June|July|August|September|October|November|December" "نوامبر" }}
+    {{ $formattedDate }}
+</span>
+{{- end }}
+
+{{- if .ReadingTime -}}
+<span class="meta-item">&nbsp;·&nbsp;{{ .ReadingTime }} دقیقه</span>
+{{- end }}
